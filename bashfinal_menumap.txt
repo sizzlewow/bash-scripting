@@ -48,8 +48,3 @@ mainmenu
 		exit	
 	exit
 
-
-option_menu
-
-casual_menu
-
