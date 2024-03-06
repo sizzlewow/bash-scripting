@@ -1,9 +1,4 @@
-#!/bin/bash -x
-
-#  NEED TO DO
-###########--->  Fix menu duplication when enter is pressed with no string input ***whiptail as solution***
-###########--->  Add Logging ***log_func***
-###########--->  Add Error Handling
+#!/bin/bash
 
 #######################################################
 # Sets Menu colors by changing environmental variables for Newt
