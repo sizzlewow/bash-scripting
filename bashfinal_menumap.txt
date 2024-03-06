@@ -1,0 +1,55 @@
+mainmenu
+	business_menu
+		log_menu
+			auth.log
+				**opens /var/log/auth.log in less**
+			search
+				**runs journalctl with -u option and search term**
+			mainmenu
+			exit
+				**exits script**
+		backup_tools
+			Basic-copy
+				**takes user input for source and destination file, then applies those inputs to cp command**
+			Bit-for-Bit
+				**same as Basic-copy but uses dd command**
+			business_menu
+			mainmenu
+			exit		
+		utilities
+			ping
+				**takes user input and runs ping command, will wait for input after pressing ctrl^c so you can review data, then returns to menu**
+			tracepath
+				**same as ping option but with tracepath command**
+			nslookup
+				**same as two above**
+			top
+				**runs top command, returns to menu if ctrl^c is used**
+			ssh
+				**takes user input for destination address and username for remote host, then applies both to ssh command with -l option**
+			cron_menu
+				myself
+					**takes user input for cron entry, then applies it to crontab**
+			business_menu
+			mainmenu
+			exit
+	casual_menu
+		**menu contains installed game packages found via dpkg-query**
+		mainmenu
+		exit	
+	adventure
+		**reads exerpt from The Hobbit, then waits for keypress**
+	option_menu
+		start_at_login
+			**adds script to end of ~/.bashrc**
+		remove_from_login
+			**removes script from end of ~/.bashrc**
+		mainmenu
+		exit	
+	exit
+
+
+option_menu
+
+casual_menu
+
